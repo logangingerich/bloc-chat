@@ -7,23 +7,25 @@
 </head>
 <body ng-controller="MainCtrl">
     
-    <ui-view></ui-view>
+<ui-view></ui-view>
     
-    <script src="/scripts/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
-    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
 <script>
-  // Initialize Firebase
-  var config = {
+// Initialize Firebase
+var config = {
     apiKey: "AIzaSyDuqXBdvI_ZsqVKOObBYGMeVUrJJn5pZfM",
     authDomain: "bloc-chat-749b4.firebaseapp.com",
     databaseURL: "https://bloc-chat-749b4.firebaseio.com",
     storageBucket: "bloc-chat-749b4.appspot.com",
     messagingSenderId: "428617735305"
-  };
-  firebase.initializeApp(config);
+    };
+firebase.initializeApp(config);
 </script>
+<script src="/scripts/app.js"></script>
+<script src="/scripts/controllers/MainCtrl.js"></script>
+<script src="/scripts/factories/roomFactory.js"></script>
 </body>
 </html>
