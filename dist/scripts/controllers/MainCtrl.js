@@ -1,10 +1,9 @@
 (function() {
-    function MainCtrl() {
-
-
+    function MainCtrl($scope, Room) {
+        $scope.rooms = Room.all;
     }
     
     angular
-    .module("blocChat", ["ui.router", "firebase"])
-    .controller('MainCtrl', ['Room', MainCtrl]);
+    .module("blocChat")
+    .controller('MainCtrl', ['$scope', 'Room', MainCtrl]);
 })();
