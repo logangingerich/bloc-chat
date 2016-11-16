@@ -1,0 +1,7 @@
+.sidebar {
+    background-color: lightgray;
+    padding-right: 1%;
+    padding-left: 1%;
+    position: absolute;
+    height: 100%
+}
