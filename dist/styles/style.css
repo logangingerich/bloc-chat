@@ -39,3 +39,9 @@
     background-color: darkgray;
     color: white;
 }
+
+.right {
+    width: 73%;
+    float: right;
+    font-size: 200%;
+}

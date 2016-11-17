@@ -11,6 +11,10 @@
                 size: 'sm'
                 })
             }
+        
+        this.setCurrentRoom = function(room) {
+            this.currentRoom = room;
+        }
         }
     angular
     .module("blocChat")
