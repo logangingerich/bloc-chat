@@ -1,5 +1,5 @@
 <div class="sidebar">
-    <h4 class="createButton">Create Room</h4>
+    <button class="createButton" ng-click="home.openModal()">Create Room</button>
     <h1>Bloc Chat</h1>
-    <h2 class="rooms" ng-repeat="room in home.rooms">{{room.$value}}</h2>
+    <h2 class="rooms" ng-repeat="room in home.rooms">{{room.name}}</h2>
 </div>

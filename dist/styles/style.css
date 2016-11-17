@@ -6,7 +6,7 @@
     height: 100%;
     width: 25%;
     font-family: arial;
-    font-size: 90%;
+    font-size: 80%;
 }
 
 .createButton {
@@ -22,4 +22,20 @@
 .rooms {
     color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
+}
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.modalContainer {
+    margin: 5%;
+    text-align: center;
+}
+
+.buttons {
+    padding: 2%;
+}
+
+.create {
+    background-color: darkgray;
+    color: white;
 }
