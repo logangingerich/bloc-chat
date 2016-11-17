@@ -1,6 +1,7 @@
 (function() {
-    function MainCtrl(Room, $uibModal) {
+    function MainCtrl(Room, Message, $uibModal) {
         this.rooms = Room.all;
+        this.getRoomByID = Message.getRoomByID;
         
         this.openModal = function() {
             console.log("open");
@@ -14,9 +15,10 @@
         
         this.setCurrentRoom = function(room) {
             this.currentRoom = room;
+            this.messages = this.getRoomByID(room.$id);
         }
         }
     angular
     .module("blocChat")
-    .controller('MainCtrl', ['Room', '$uibModal', MainCtrl]);
+    .controller('MainCtrl', ['Room', 'Message', '$uibModal', MainCtrl]);
 })();
