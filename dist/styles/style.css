@@ -4,7 +4,7 @@
     position: absolute;
     height: 100%;
     width: 29%;
-    font-family: arial;
+    font-family: "Courier New";
     font-size: 80%;
     color: white;
     background-image: url(/assets/images/space.png);
@@ -12,12 +12,15 @@
 
 .createButton {
     float: right;
-    background-color: lightgray;
-    color: rgba(0, 0, 0, 0.5);
+    background-color: white;
+    color: black;
     padding: 2%;
     margin-top: 8%;
     border-radius: 7px;
     cursor: pointer;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .rooms {
@@ -48,8 +51,10 @@
 .roomTitle {
     text-align: center;
     color: black;
-    font-size: 170%;
+    font-size: 3em;
     font-weight: bold;
+    color: rgb(51, 0, 102);
+    font-family: "Courier New";
 }
 
 .messages {
@@ -82,4 +87,8 @@
 
 .messageInput {
     width: 92%;
+}
+
+.title {
+  font-weight: bold;
 }
