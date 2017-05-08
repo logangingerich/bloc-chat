@@ -1,5 +1,4 @@
 .sidebar {
-    background-color: darkgray;
     padding-right: 1%;
     padding-left: 1%;
     position: absolute;
@@ -7,6 +6,8 @@
     width: 29%;
     font-family: arial;
     font-size: 80%;
+    color: white;
+    background-image: url(/assets/images/space.png);
 }
 
 .createButton {
@@ -20,7 +21,6 @@
 }
 
 .rooms {
-    color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
@@ -43,17 +43,18 @@
 .right {
     width: 70%;
     float: right;
-    font-size: 100%;
 }
 
 .roomTitle {
     text-align: center;
-    color: rgba(0, 0, 0, 0.8);
-    font-size: 150%;
+    color: black;
+    font-size: 170%;
+    font-weight: bold;
 }
 
 .messages {
     border-top-style: solid;
+    font-size: 1.5em;
 }
 
 .time {
@@ -70,7 +71,8 @@
     position: fixed;
     bottom: 0;
     width: 69%;
-    padding-bottom: 1%;
+    padding: 1%;
+    background-color: lightgray;
 }
 
 .send {
